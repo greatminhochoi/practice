@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript 퀴즈</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="topbar" aria-label="퀴즈 정보">
+      <div>
+        <p class="eyebrow">연습 문제</p>
+        <h1>JavaScript 퀴즈</h1>
+      </div>
+      <div class="score-pill" aria-live="polite">
+        <span id="scoreText">0 / 0</span>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="퀴즈 도구">
+      <button id="shuffleBtn" type="button">문제 섞기</button>
+    </section>
+
+    <section class="status-row" aria-live="polite">
+      <span id="progressText"></span>
+      <span id="accuracyText"></span>
+    </section>
+
+    <section id="quizList" class="quiz-list" aria-label="문제 목록"></section>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
